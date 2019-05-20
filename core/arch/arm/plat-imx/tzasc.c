@@ -373,7 +373,7 @@ static int board_imx_tzasc_configure(vaddr_t addr)
 	 * Like with i.MX 8MQ, The DDR mapping seems to start at 0.
 	 */
 	tzc_configure_region(1, 0x00000000,
-		TZC_ATTR_REGION_SIZE(TZC_REGION_SIZE_2G) |
+		TZC_ATTR_REGION_SIZE(TZC_REGION_SIZE_8G) |
 		TZC_ATTR_REGION_EN_MASK | TZC_ATTR_SP_NS_RW);
 
 	tzc_configure_region(2, (CFG_TZDRAM_START - DRAM0_BASE),
